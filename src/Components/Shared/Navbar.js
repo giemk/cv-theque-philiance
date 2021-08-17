@@ -33,13 +33,13 @@ class BootstrapNavbar extends React.Component {
                   <NavDropdown.Item href="/ListCv">Liste CV</NavDropdown.Item>
 
                  </NavDropdown>
-                  {/* <Nav.Link as={Link} to="/Validation">
-                    Validation
+                   <Nav.Link as={Link} to="/Test">
+                    Test
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/Validationpass">
-                    ValidationPass
+                  <Nav.Link as={Link} to="/ContactPage">
+                  Contact
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/Email">
+                  {/* <Nav.Link as={Link} to="/Email">
                     Les emails
                   </Nav.Link> */}
               </Navbar.Collapse>

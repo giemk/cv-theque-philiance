@@ -14,7 +14,7 @@ class BootstrapHeader extends React.Component {
               variant="dark"
               expand="lg"
               sticky="top">
-            <Navbar.Brand href="/"><img src="/images/logo_philiance_sourcing.png" alt="image"widht ="40" height = "40"/></Navbar.Brand>
+            <Navbar.Brand href="/"><img src="/images/logo_philiance_sourcing.png" alt="image"widht ="55" height = "55"/></Navbar.Brand>
             <Nav className="mx-auto ">
               
               <Navbar.Toggle aria-controls="basic-navbar-nav" />

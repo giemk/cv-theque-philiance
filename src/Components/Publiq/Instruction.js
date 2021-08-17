@@ -1,22 +1,23 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const ValiderPassPage = () => {
+
+const InstructionPage = () => {
   return (
     <div className=" container divValidation">
       <div className="text-center mb-3">
-        <h3>Mot de passe oublié</h3>
+        <h3>Réinitiliser mot de passe</h3>
       </div>
       <div className="divForm">
         <form className="mb-3">
-          <label htmlFor="">EMAIL</label>
+          <label htmlFor="">nouveau mot de passe</label>
           <input type="text" placeholder="" />
         </form>
-        <Button variant="outline-primary" type="submit"href="/Instruction">
-          M'envoyer les instructions
+        <Button variant="outline-primary" type="submit"href="/Connexion">
+          Envoyer
         </Button>
       </div>
     </div>
   );
 };
-export default ValiderPassPage;
+export default InstructionPage;

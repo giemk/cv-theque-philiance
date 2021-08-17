@@ -16,9 +16,10 @@ const ListeCv = () => {
         <thead>
           <tr>
             <th>#</th>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Numero de telephone</th>
+            <th>Nom-Prénom</th>
+            <th>CV publié</th>
+            <th>Dernière activité</th>
+            <th>Supprimer le CV</th>
           </tr>
         </thead>
         <tbody>

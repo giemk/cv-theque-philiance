@@ -97,7 +97,7 @@ const InscriptionPage = () => {
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Numero de telephone</Form.Label>
+          <Form.Label>Numéro de téléphone</Form.Label>
           <Form.Control
             type="tel"
             name={"tel"}

@@ -17,6 +17,8 @@ import ContactUs from "./Components/Users/EmailService";
 import PresentationCvpage from "./Components/Entreprise/PresentationCv";
 import BootstrapHeader from "./Components/Shared/Header";
 import ListeCv from "./Components/Users/ListeCv";
+import InstructionlPage from "./Components/Publiq/Instruction";
+
 function App() {
   return (
     <Router>
@@ -51,9 +53,11 @@ function App() {
       <BootstrapNavbar />
         <ProfilPage />
       </Route>
+
       {/* <Route path="/Test">
         <TestPage />
-      </Route> */}
+      </Route>   */}
+
       <Route path="/MonProfilCv">
       <BootstrapNavbar />
         <ProfilDetailsPage />
@@ -77,6 +81,11 @@ function App() {
       <Route path="/Validation">
       <BootstrapNavbar />
         <ValidationEmailPage />
+      </Route>
+
+      <Route path="/Instruction">
+      <BootstrapNavbar />
+        <InstructionlPage />
       </Route>
 
       <Route path="/Validationpass">
