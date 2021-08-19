@@ -9,9 +9,12 @@ const ListeCv = () => {
   const [users, setUsers] = useState([]);
 
   return (
-    <main className="container main w-50">
+    <main className="container main ">
       <div className="text-center">
-      <h1>Liste des CV</h1>
+      <div className="text-center bg-custom border border-primary rounded-pill mb-3">
+        <h1>Liste des CV</h1>
+        </div>
+      <div className="border border-success rounded">
       <Table striped bordered hover size="sm"> 
         <thead>
           <tr>
@@ -38,9 +41,13 @@ const ListeCv = () => {
             {/* </tr> */}
         </tbody>
       </Table> 
-      <Link className="btn btn-outline-success" to="/MonProfilCv">
+      <Link className="btn btn-outline-success m-2" to="/MonProfilCv">
         Ajouter un CV
       </Link>
+      <Link className="btn btn-outline-danger m-2" to="/MonProfilCv">
+        Supprimer un CV
+      </Link>
+    </div>
     </div>
     </main>
   );

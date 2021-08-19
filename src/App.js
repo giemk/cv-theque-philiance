@@ -18,6 +18,8 @@ import PresentationCvpage from "./Components/Entreprise/PresentationCv";
 import BootstrapHeader from "./Components/Shared/Header";
 import ListeCv from "./Components/Users/ListeCv";
 import InstructionlPage from "./Components/Publiq/Instruction";
+import SuppComptePage from "./Components/Users/SupprimerCompte";
+
 
 function App() {
   return (
@@ -54,9 +56,6 @@ function App() {
         <ProfilPage />
       </Route>
 
-      {/* <Route path="/Test">
-        <TestPage />
-      </Route>   */}
 
       <Route path="/MonProfilCv">
       <BootstrapNavbar />
@@ -91,6 +90,10 @@ function App() {
       <Route path="/Validationpass">
       <BootstrapNavbar />
         <ValiderPassPage />
+      </Route>
+      <Route path="/SupprimerCompte">
+      <BootstrapNavbar />
+        <SuppComptePage />
       </Route>
 
       <Route path="/ListUser">

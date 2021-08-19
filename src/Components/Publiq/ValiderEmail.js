@@ -5,7 +5,9 @@ const ValidationEmailPage = () => {
   return (
     <div className=" container divValidation mt-5 w-50">
       <div className="text-center mb-3">
+      <div className=" bg-custom border border-primary rounded-pill">
         <h3>Valider votre email</h3>
+        </div>
       </div>
       <div className="divForm">
         <form className="mb-3">

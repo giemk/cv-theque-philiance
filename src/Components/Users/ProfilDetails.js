@@ -12,14 +12,16 @@ const ProfilDetailsPage = () => {
 
   console.log(date.toLocaleDateString());
   return (
-    <main className="container main w-50">
+    <main className="container main border border-primary rounded">
       <div>
         <Row className="d-flex align-items-center">
           <Col xs={6} md={2}>
             <Image src="https://picsum.photos/100" roundedCircle />
           </Col>
           <Col>
-            <h1>Mon profil</h1>
+          <div className="text-center bg-custom border border-primary rounded-pill mb-3">
+        <h1>Mon profil</h1>
+        </div>
           </Col>
         </Row>
       </div>
@@ -92,12 +94,12 @@ const ProfilDetailsPage = () => {
             </Row>
             <Row>
               <Fragment>
-                <Col md={5}>
+                <Col md={4}>
                   <Form.Group className="mb-3 ">
                     <Form.Control type="text" placeholder="Du" />
                   </Form.Group>
                 </Col>
-                <Col md={1}>
+                <Col md={2}>
                   <Button onClick={() => setShow(!show)} variant="outline-primary">
                     Calendrier
                   </Button>
@@ -105,12 +107,12 @@ const ProfilDetailsPage = () => {
                 </Col>
               </Fragment>
               <Fragment>
-                <Col md={5}>
+                <Col md={4}>
                   <Form.Group className="mb-3 ">
                     <Form.Control type="text" placeholder="Au" />
                   </Form.Group>
                 </Col>
-                <Col md={1}>
+                <Col md={2}>
                   <Button onClick={() => setShow3(!show3)} variant="outline-primary">
                     Calendrier
                   </Button>
@@ -132,8 +134,8 @@ const ProfilDetailsPage = () => {
             </Form.Group>
           </Form>
           <div className="MonProfilButton">
-            <Button variant="outline-primary"> Sauvegarder </Button>
-            <Button variant="outline-primary"> Annuler </Button>
+            <Button variant="outline-success"> Sauvegarder </Button>
+            <Button variant="outline-danger"> Annuler </Button>
           </div>
           <div className="borderDiv icons">
             <div>
@@ -171,12 +173,12 @@ const ProfilDetailsPage = () => {
             </Form.Group>
             <Row>
               <Fragment>
-                <Col md={5}>
+                <Col md={4}>
                   <Form.Group className="mb-3 ">
                     <Form.Control type="text" placeholder="Du" />
                   </Form.Group>
                 </Col>
-                <Col md={1}>
+                <Col md={2}>
                   <Button onClick={() => setShow1(!show1)} variant="outline-primary">
                     Calendrier
                   </Button>
@@ -184,7 +186,7 @@ const ProfilDetailsPage = () => {
                 </Col>
               </Fragment>
               <Fragment>
-                <Col md={5}>
+                <Col md={4}>
                   <Form.Group className="mb-3 ">
                     <Form.Control type="text" placeholder="Au" />
                   </Form.Group>
@@ -209,8 +211,8 @@ const ProfilDetailsPage = () => {
                 </Form.Group>
               </Col>
               <Col md={8} className="MonProfilButton">
-                <Button variant="outline-primary"> Sauvegarder </Button>
-                <Button variant="outline-primary"> Annuler </Button>
+                <Button variant="outline-success"> Sauvegarder </Button>
+                <Button variant="outline-danger"> Annuler </Button>
               </Col>
             </Row>
           </div>
@@ -266,8 +268,8 @@ const ProfilDetailsPage = () => {
             </Col>
           </Row>
           <div className="MonProfilButton">
-            <Button variant="outline-primary"> Sauvegarder </Button>
-            <Button variant="outline-primary"> Annuler </Button>
+            <Button variant="outline-success"> Sauvegarder </Button>
+            <Button variant="outline-danger"> Annuler </Button>
           </div>
           <Form.Group className="mb-3 ">
             <Form.Control

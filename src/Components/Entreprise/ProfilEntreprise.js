@@ -12,14 +12,16 @@ const ProfilEntreprisePage = () => {
 
   console.log(date.toLocaleDateString());
   return (
-    <main className="container main w-50">
+    <main className="container main border border-primary rounded">
       <div>
         <Row className="d-flex align-items-center">
           <Col xs={6} md={2}>
             <Image src="https://picsum.photos/100" roundedCircle />
           </Col>
           <Col>
-            <h1>Profil Entreprise </h1>
+          <div className="text-center bg-custom border border-primary rounded-pill mb-3">
+        <h1>Profil Entreprise</h1>
+        </div>
           </Col>
         </Row>
       </div>

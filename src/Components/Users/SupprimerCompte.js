@@ -3,13 +3,16 @@ import { Form, Button, Row, Col } from "react-bootstrap";
 
 const SuppComptePage = () => {
   return (
+    <main className="container main mt-4">
+    <div className="text-center">
     <div id="">
-      <div className="div4 ">
-        <h3>Supprimer mon compte</h3>
-        <div className="">
+      <div className=" bg-custom border border-primary rounded-pill">
+        <h3>Supprimer un compte</h3>
+        </div>
+        <div className="border border-primary mt-4">
           <Form>
             <Row>
-              <Col md={4}>
+              <Col md={6}>
                 <Form.Select aria-label="Default select example">
                   <option>Pour quelle raison</option>
                   <option value="1">raison 1</option>
@@ -17,7 +20,7 @@ const SuppComptePage = () => {
                 </Form.Select>
               </Col>
               <Col>
-                <Button variant="outline-danger" type="submit">
+                <Button variant="outline-danger" type="submit" href="/Profil">
                   Supprimer mon profil
                 </Button>
               </Col>
@@ -26,6 +29,7 @@ const SuppComptePage = () => {
         </div>
       </div>
     </div>
+    </main>
   );
 };
 export default SuppComptePage;

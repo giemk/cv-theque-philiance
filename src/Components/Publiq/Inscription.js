@@ -63,10 +63,13 @@ const InscriptionPage = () => {
   }, []);
 
   return (
-    <div className={"container mt-5 w-50"}>
-      <h1>Inscrivez-vous</h1>
+    <div className="main container mt-3 w-50">
+       <div className="text-center bg-custom border border-primary rounded-pill mb-3">
+        <h1>Inscrivez-vous</h1>
+        </div>
+      <div className="border border-primary rounded">
       <Form onSubmit={formik.handleSubmit}>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Prénom</Form.Label>
           <Form.Control
             type="text"
@@ -81,7 +84,7 @@ const InscriptionPage = () => {
               formik.errors.firstname}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Nom</Form.Label>
           <Form.Control
             type="text"
@@ -96,7 +99,7 @@ const InscriptionPage = () => {
               formik.errors.lastname}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Numéro de téléphone</Form.Label>
           <Form.Control
             type="tel"
@@ -109,7 +112,7 @@ const InscriptionPage = () => {
             {formik.touched.tel && formik.errors.tel && formik.errors.tel}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
@@ -122,7 +125,7 @@ const InscriptionPage = () => {
             {formik.touched.email && formik.errors.email && formik.errors.email}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Mot de passe</Form.Label>
           <Form.Control
             type="password"
@@ -137,7 +140,7 @@ const InscriptionPage = () => {
               formik.errors.password}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="m-3">
           <Form.Label>Confirmez le mot de passe</Form.Label>
           <Form.Control
             type="password"
@@ -152,10 +155,11 @@ const InscriptionPage = () => {
               formik.errors.confirm}
           </Form.Text>
         </Form.Group>
-        <Button variant="outline-primary" type="submit" href="/validation">
+        <Button variant="outline-primary m-3" type="submit" href="/validation">
           Envoyer
         </Button>
       </Form>
+    </div>
     </div>
   );
 };

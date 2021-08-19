@@ -10,8 +10,12 @@ const RechercheCvPage = () => {
 
   console.log(date.toLocaleDateString());
   return (
-    <main className="container main mt-5 w-50">
-      <div>
+    <div className="container mt-5">
+     <div className="container mt-3 w-100"> 
+       <div className="text-center bg-custom border border-success rounded-pill mb-3">
+        <h1>Recherche  CV</h1>
+      </div>
+      <div className="">
         <Row className="mb-3">
           <Col>
             <Form className="d-flex">
@@ -26,7 +30,8 @@ const RechercheCvPage = () => {
           </Col>
         </Row>
       </div>
-      <div className="rechercheDivHaut">
+      <div className=" border border-success rounded">
+      <div className="rechercheDivHaut m-4">
         <Row>
           <Col>
             <h6 className="titre">Disponibilté</h6>
@@ -36,7 +41,7 @@ const RechercheCvPage = () => {
               </Col>
               <Col>
                 <Fragment className="d-flex">
-                  <Button onClick={() => setShow(!show)} variant="outline-success">
+                  <Button onClick={() => setShow(!show)} variant="outline-primary">
                     Calendrier
                   </Button>
                   {show ? <Calendar onChange={setDate} value={date} /> : null}
@@ -157,7 +162,7 @@ const RechercheCvPage = () => {
       <hr />
 
       <CardGroup>
-      <Card className="mb-4">
+      <Card className="m-4 border border-success rounded">
         <Card.Body>
         <Card.Img
           className="profil"
@@ -177,9 +182,30 @@ const RechercheCvPage = () => {
         <Button variant="outline-success" href="/PresentationCv">Voir Détails</Button>
         </Card.Body>
         </Card>
-      <Card className="mb-4">
+      <Card className="m-4 border border-success rounded">
         <Card.Body>
         <Card.Img
+         className="profil"
+          variant="top"
+          src="images/couple.png"
+          width ={55} 
+          height ={55}
+              />
+        <Card.Title claasName="text-white">NOM :</Card.Title>
+        <Card.Text>
+                      Lorem 
+        </Card.Text>
+        <Card.Title>PRENOM :</Card.Title>
+        <Card.Text>
+                      Lorem 
+        </Card.Text>
+        <Button variant="outline-success" href="/PresentationCv">Voir Détails</Button>
+        </Card.Body>
+        </Card>
+        <Card className="m-4 border border-success rounded">
+        <Card.Body>
+        <Card.Img
+         className="profil"
           variant="top"
           src="images/couple.png"
           width ={55} 
@@ -197,8 +223,9 @@ const RechercheCvPage = () => {
         </Card.Body>
         </Card>
       </CardGroup>
-  
-  </main>
+  </div>
+  </div>
+  </div>
   );
 };
 export default RechercheCvPage;

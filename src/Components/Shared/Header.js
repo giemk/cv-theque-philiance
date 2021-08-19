@@ -34,15 +34,9 @@ class BootstrapHeader extends React.Component {
                   <NavDropdown.Item href="/ListeCv">Liste CV</NavDropdown.Item>
 
                  </NavDropdown>
-                  {/* <Nav.Link as={Link} to="/Validation">
-                    Validation
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/Validationpass">
-                    ValidationPass
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/Email">
-                    Les emails
-                  </Nav.Link> */}
+                  <Nav.Link as={Link} to="/ContactPage">
+                    Contact
+                  </Nav.Link> 
               </Navbar.Collapse>
             </Nav>
             </Navbar>

@@ -35,7 +35,7 @@ const InfoConnexPage = () => {
               </Col>
             </Row>
             <div className="modifProfil">
-              <Button variant="outline-primary" type="submit">
+              <Button variant="outline-success" type="submit">
                 modifier mon profil
               </Button>
             </div>

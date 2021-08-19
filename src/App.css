@@ -204,8 +204,15 @@ span {
   height: 31%;
 }
 
-card.img.profil {
-  width: 50% !important;
+.profil {
+  width: 30% !important;
+}
+.bg-custom {
+  background: linear-gradient(#ffde00 0, #11a0db 100%);
+}
+
+.form-control {
+  border-radius: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {

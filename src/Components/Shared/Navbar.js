@@ -6,8 +6,8 @@ class BootstrapNavbar extends React.Component {
   render() {
     return (
       <div className="mb-4">
-        <div className="row">
-          <div className="col-md-12 ">
+        <div className="row ">
+          <div className="col-md-12">
             <Navbar
               id="navbar"
               bg="secondary"
@@ -33,9 +33,9 @@ class BootstrapNavbar extends React.Component {
                   <NavDropdown.Item href="/ListCv">Liste CV</NavDropdown.Item>
 
                  </NavDropdown>
-                   <Nav.Link as={Link} to="/Test">
+                   {/* <Nav.Link as={Link} to="/Test">
                     Test
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <Nav.Link as={Link} to="/ContactPage">
                   Contact
                   </Nav.Link>

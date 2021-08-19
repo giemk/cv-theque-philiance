@@ -20,9 +20,8 @@ const ReseauSociauxPage = () => {
         Facebook
       </Button>
       <br />
-      <Button variant="success" type="submit" className="mt-4 btn-reseaux"href="https://twitter.com/share?ref_src=twsrc%5Etfw">
+      <Button variant="info" type="submit" className="mt-4 btn-reseaux"href="https://twitter.com">
         <i className="fab fa-twitter"></i>
-
         Twitter
       </Button>
       <br />
@@ -31,7 +30,7 @@ const ReseauSociauxPage = () => {
         GitHub
       </Button>
       <br />
-      <Button variant="info" type="submit" className="mt-4 btn-reseaux"href="https://www.linkedin.com/home">
+      <Button variant="primary" type="submit" className="mt-4 btn-reseaux"href="https://www.linkedin.com/home">
         <i className="fab fa-linkedin-in"></i>
         LinkedIn
       </Button>

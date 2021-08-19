@@ -1,10 +1,14 @@
 import React from "react";
-import { Form, Button, Row, Col, FormControl, Card } from "react-bootstrap";
+import { Form, Button, Row, Col, FormControl, Card ,Link} from "react-bootstrap";
+import { CardActions} from "react-mdl";
 
 const PresentationCvpage = () => {
   return (
     <main className="main mt-5">
       <div>
+      <div className="text-center bg-custom border border-success rounded-pill mb-3">
+        <h1>CV Philiance</h1>
+        </div>
         <Row className="mb-3">
           <Col>
             <Form className="d-flex">
@@ -18,10 +22,11 @@ const PresentationCvpage = () => {
             </Form>
           </Col>
         </Row>
-      </div>
-      <section className="sectionPresentationCV">
+      </div >
+      
+      <section className="sectionPresentationCV border border-success rounded">
         <div className="cvPhiliance">
-          <div className="divHautCVphiliance mb-4">
+          <div className="divHautCVphiliance m-3">
             <div className="divTitre">
               <h5 className="text-center w-80">
                 Developpeur Front-End et Back-End
@@ -35,8 +40,9 @@ const PresentationCvpage = () => {
               <Card.Img
                 variant="top"
                 src="images/logo_philiance_sourcing.png"
+                widht ="55" height = "60"
               />
-                <Card className="mb-4 bg-secondary text-white">
+                <Card className="m-4 bg-secondary text-white">
                   <Card.Body>
                     <Card.Title claasName="text-white">PROFIL :</Card.Title>
                     <Card.Text>
@@ -53,6 +59,9 @@ const PresentationCvpage = () => {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Consectetur, ut.
                     </Card.Text>
+                    <Card.Link>
+                      <a href="http://www.philiance.com/">Philiance Formation</a>
+                    </Card.Link>
                     <Card.Img
                 variant="top"
                 src="images/logo_philiance.png"

@@ -26,10 +26,13 @@ const UserList = () => {
   console.log(users);
 
   return (
-    <main className="container main w-50">
-      <div className="text-center">
+    <main className="container main ">
+         <div className="text-center">
+      <div className="text-center bg-custom  border border-primary rounded-pill">
       <h1>Liste des utilisateurs</h1>
-      <Table striped bordered hover size="sm">
+      </div>
+      <div>
+      <Table striped bordered hover size="sm mt-4 border border-primary rounded">
         <thead>
           <tr>
             <th>#</th>
@@ -41,7 +44,7 @@ const UserList = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
+          {/* {users.map((user) => (
             <tr key={user.id}>
               <td>{user.id}</td>
               <td key={user.id}>
@@ -54,13 +57,17 @@ const UserList = () => {
                 <Button onClick={() => deleteUser(user.id)}>Delete</Button>
               </td>
             </tr>
-          ))}
+          ))} */}
         </tbody>
       </Table>
-
-      <Link className="btn btn-outline-primary" to="/Inscription">
+      {/* <div className="row border rounded w-50"> */}
+      <Link className="btn btn-outline-primary m-2" to="/Inscription">
         Ajouter un utilisateur
       </Link>
+      <Link className="btn btn-outline-danger m-2" to="/SupprimerCompte">
+        Supprimer un utilisateur
+      </Link>
+    </div>
     </div>
     </main>
   );
