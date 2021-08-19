@@ -14,8 +14,8 @@ const ContactPage = () => {
           <div>
             <h3>Adresse :</h3>
             <p>Philiance</p>
-            <p>Porc Elysée</p>
-            <p>41 rue Michel Ange </p>
+            <p>Parc Elysée</p>
+            <p>37 rue Michel Ange </p>
             <p>91080 Courcouronnes </p>
             <p>Tèl : 01 69 47 45 90</p>
             <p>
@@ -27,13 +27,13 @@ const ContactPage = () => {
           </div>
           <div>
             <h3>Ouverture de l'accueil téléphonique :</h3>
-            <p> du lundi au vendredi de 8h45 à 19h00</p>
+            <p> du lundi au vendredi de 8h45 à 18h00</p>
             <p>Tèl : 01 69 47 45 90</p>
           </div>
         </div>
         <div className="col m-5 ">
           <h3>Carte</h3>
-
+          {/* <img src="images/philiancePNG.PNG" id="photo" width="500"  onClick="document.getElementById('photo').style.width='300px';"/> */}
           <img className="imageMap" src="images/philiancePNG.PNG" alt="" />
         </div>
       </section>

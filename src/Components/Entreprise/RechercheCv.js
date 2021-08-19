@@ -21,11 +21,11 @@ const RechercheCvPage = () => {
             <Form className="d-flex">
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Rechercher"
                 className="mr-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button  className="fa fa-search" variant="outline-success"></Button>
             </Form>
           </Col>
         </Row>

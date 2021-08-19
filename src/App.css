@@ -125,9 +125,16 @@ i {
 }
 
 .imageMap {
-  max-width: 400px;
+  max-width: 100%;
 }
 
+.sourcing {
+  max-width: 30%;
+}
+
+.formation {
+  max-width: 50%;
+}
 /*  Fin Ajout Mentions légales */
 
 .container {
@@ -229,5 +236,10 @@ span {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 500px) {
+  .divHautCVphiliance h5 {
+    border: none;
   }
 }

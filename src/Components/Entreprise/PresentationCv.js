@@ -4,7 +4,7 @@ import { CardActions} from "react-mdl";
 
 const PresentationCvpage = () => {
   return (
-    <main className="main mt-5">
+    <main className="main">
       <div>
       <div className="text-center bg-custom border border-success rounded-pill mb-3">
         <h1>CV Philiance</h1>
@@ -18,14 +18,15 @@ const PresentationCvpage = () => {
                 className="mr-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Rechercher</Button>
+              <Button className="fa fa-search" variant="outline-success"></Button>
             </Form>
           </Col>
         </Row>
       </div >
       
-      <section className="sectionPresentationCV border border-success rounded">
-        <div className="cvPhiliance">
+      <section className="row sectionPresentationCV border border-success rounded">
+
+        <div className="col cvPhiliance">
           <div className="divHautCVphiliance m-3">
             <div className="divTitre">
               <h5 className="text-center w-80">
@@ -35,12 +36,14 @@ const PresentationCvpage = () => {
               <p>disponibilité 00/00/00</p>
             </div>
           </div>
-          <div className=" sectionPresentationCV">
+
+          <div className="row sectionPresentationCV">
             <div className="cvPhiliance">
               <Card.Img
+              className="sourcing"
                 variant="top"
                 src="images/logo_philiance_sourcing.png"
-                widht ="55" height = "60"
+                widht ="" height = "50"
               />
                 <Card className="m-4 bg-secondary text-white">
                   <Card.Body>
@@ -63,8 +66,10 @@ const PresentationCvpage = () => {
                       <a href="http://www.philiance.com/">Philiance Formation</a>
                     </Card.Link>
                     <Card.Img
+                    className="formation"
                 variant="top"
                 src="images/logo_philiance.png"
+                widht ="" height = "60"
               />
                   </Card.Body>
                 </Card>
@@ -103,7 +108,8 @@ const PresentationCvpage = () => {
             </div>
           </div>
         </div>
-        <div className="cvPhiliance ">
+
+        <div className="col cvPhiliance ">
           <Card className="mb-4 partieDroite">
             <Card.Body>
               <Card.Title>Informations</Card.Title>
