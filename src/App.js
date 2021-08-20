@@ -19,11 +19,17 @@ import BootstrapHeader from "./Components/Shared/Header";
 import ListeCv from "./Components/Users/ListeCv";
 import InstructionlPage from "./Components/Publiq/Instruction";
 import SuppComptePage from "./Components/Users/SupprimerCompte";
-
+import TestPage from "./Components/Shared/Test";
+//import GoogleMap from "./Components/Shared/GoogleMap";
 
 function App() {
   return (
     <Router>
+
+      <Route path="/Test">
+      <TestPage/>
+      </Route>
+
       <Route path="/PresentationCV">
       <BootstrapHeader/>
       <PresentationCvpage />
@@ -75,6 +81,7 @@ function App() {
       <Route path="/ContactPage">
       <BootstrapNavbar />
         <ContactPage />
+        {/* <GoogleMap/> */}
       </Route>
 
       <Route path="/Validation">

@@ -23,7 +23,7 @@ const ConnexionPage = () => {
           <Form.Check type="checkbox" label="Se souvenir de moi" />
           <Link to="/ValidationPass"> Mot de passe oublié ?</Link>
         </Form.Group>
-        <Button variant="outline-primary m-3" type="submit">
+        <Button variant="outline-primary m-3" type="submit"href="/Profil">
           Se connecter
         </Button>
       </Form>

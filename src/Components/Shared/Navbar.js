@@ -14,7 +14,7 @@ class BootstrapNavbar extends React.Component {
               variant="dark"
               expand="lg"
               sticky="top">
-<Navbar.Brand href="/"><img src="/images/logo_philiance.png" alt="image"widht ="55" height = "55"/></Navbar.Brand>
+            <Navbar.Brand href="/"><img src="/images/logo_philiance.png" alt="image"widht ="55" height = "55"/></Navbar.Brand>
             <Nav className="mx-auto ">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                <Navbar.Collapse id="basic-navbar-nav">
@@ -33,9 +33,9 @@ class BootstrapNavbar extends React.Component {
                   <NavDropdown.Item href="/ListCv">Liste CV</NavDropdown.Item>
 
                  </NavDropdown>
-                   {/* <Nav.Link as={Link} to="/Test">
+                   <Nav.Link as={Link} to="/Test">
                     Test
-                  </Nav.Link> */}
+                  </Nav.Link>
                   <Nav.Link as={Link} to="/ContactPage">
                   Contact
                   </Nav.Link>

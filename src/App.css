@@ -222,6 +222,40 @@ span {
   border-radius: 0;
 }
 
+.philiance {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 115, 0);
+}
+
+/* Modif */
+.reseauSociauxCnx {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 auto;
+}
+/* Fin Modif */
+
+/* Ajout */
+.github {
+  margin: 15px;
+}
+
+.facebook {
+  margin: 15px;
+}
+
+.google {
+  margin: 15px;
+}
+
+.twitter {
+  margin: 15px;
+}
+
+/* Fin Ajout */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
