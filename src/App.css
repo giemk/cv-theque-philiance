@@ -93,7 +93,7 @@ i {
 }
 .rechercheDivHaut {
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid green;
   border-radius: 5px;
 }
 .divCvGlobal {
@@ -105,7 +105,7 @@ i {
 .divCV {
   /* background-color: red; */
   border-radius: 2px;
-  border: 1px solid black;
+  border: 1px solid green;
   padding: 10px;
   width: 20%;
   margin-right: 10px;
@@ -264,7 +264,6 @@ span {
 .twitter {
   margin: 15px;
 }
-
 /* Fin Ajout */
 
 @media (prefers-reduced-motion: no-preference) {

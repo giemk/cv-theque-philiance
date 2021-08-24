@@ -1,52 +1,32 @@
 import React from "react";
-import { Button,Image} from "react-bootstrap"; import {GoogleLogin ,GoogleLogout,GoogleBtn}from 'react-google-login';
-//import GoogleBtn from "../Users/GoogleBtn";
-//import FacebookBtn from "../Users/FacebookBtn";
-//import TwitterBtn from "../Users/TwitterBtn";
-//import GithubBtn from "../Users/GithubBtn";
+import FacebookBtn from '../Users/FacebookBtn';
+import GithubBtn from '../Users/GithubBtn';
+import GoogleBtn from '../Users/GoogleBtn';
+import TwitterBtn from "../Users/TwitterBtn";
 
-const ReseauxSociauxPage = () => {
+const ReseauSociauxPage = () => {
   return (
-    <div className=" mt-2 text-center bg-custom">
-      {/* <h5> Se connecter avec </h5>  */}
-      <div>
-      {/* <GoogleBtn />
-      <TwitterBtn />
-      <FacebookBtn />
-      <GithubBtn /> */}
+    <div className="sociauxbt">
 
-      {/* <div>
-      <Button  variant="warning" type="submit" className="mt-4 btn-reseaux"href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-      <i> <Image
-      width={30}
-      height={30}
-      id="google"  src="/images/Google.png" alt=""/>
-      </i>
-       Google   
-       </Button>
+    <div className="google">
+        <GoogleBtn />
       </div>
-      <Button variant="primary" type="submit" className="mt-4 btn-reseaux"href="https://fr-fr.facebook.com/">
-        <i className="fab fa-facebook"></i>
-        Facebook
-      </Button>
-      <br />
-      <Button variant="info" type="submit" className="mt-4 btn-reseaux"href="https://twitter.com">
-        <i className="fab fa-twitter"></i>
-        Twitter
-      </Button>
-      <br />
-      <Button variant="dark" type="submit" className="mt-4 btn-reseaux"href="https://github.com/">
-        <i className="fab fa-github"></i>
-        GitHub
-      </Button>
-      <br />
-      <Button variant="primary" type="submit" className="mt-4 btn-reseaux"href="https://www.linkedin.com/home">
-        <i className="fab fa-linkedin-in"></i>
-        LinkedIn
-      </Button>
-      </div> */}
-    </div>
-    </div>
+       
+      <div className="twitter">
+      <TwitterBtn />
+      </div>
+      
+      <div className="facebbok">
+      <FacebookBtn />
+      </div>
+      
+      <div className="github">
+      <GithubBtn />   
+      </div>
+     
+      </div>
+
+    
   );
 };
-export default ReseauxSociauxPage;
+export default ReseauSociauxPage;

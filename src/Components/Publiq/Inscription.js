@@ -63,11 +63,11 @@ const InscriptionPage = () => {
   }, []);
 
   return (
-    <div className="main container mt-3 w-50">
+    <div className="container mt-3 w-50">
        <div className="text-center bg-custom border border-primary rounded-pill mb-3">
         <h1>Inscrivez-vous</h1>
         </div>
-      <div className="border border-primary rounded">
+      <div className="main border border-primary rounded">
       <Form onSubmit={formik.handleSubmit}>
         <Form.Group className="m-3">
           <Form.Label>Prénom</Form.Label>

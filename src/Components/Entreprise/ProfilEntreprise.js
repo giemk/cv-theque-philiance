@@ -37,7 +37,7 @@ const ProfilEntreprisePage = () => {
           <InfoConnexPage />
           <SuppComptePage />
         </div>
-        <div id="profilDiv2" className="border border-primary rounded">
+        <div id="profilDiv2" className="container border border-primary rounded">
           <h4 className="text-center">Réseaux sociaux</h4>
           <p>
             Reliez votre compte à un réseau social pour l'utiliser comme moyen

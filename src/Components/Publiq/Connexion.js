@@ -28,7 +28,7 @@ const ConnexionPage = () => {
           <Form.Check type="checkbox" label="Se souvenir de moi" />
           <Link to="/ValidationPass"> Mot de passe oublié ?</Link>
         </Form.Group>
-        <Button variant="outline-primary m-3" type="submit"href="/Profil">
+        <Button variant="outline-success m-3" type="submit"href="/Profil">
           Se connecter
         </Button>
       </Form>
@@ -39,24 +39,9 @@ const ConnexionPage = () => {
       <div className="main reseauSociauxCnx border border-primary rounded ">
       <h5 className="text-center mt-4">Se connecter avec </h5>
 
-      <div className="row w-50">
-
-        <div className="google">
-      <GoogleBtn />
-      </div>
-        <div className="twitter">
-      <TwitterBtn />
-      </div>
-        <div className="facebook">
-      <FacebookBtn />
-      </div>
-        <div className="github">
-      <GithubBtn />
-      </div>
-
+      <div className="container  w-50">
       <ReseauxSociauxPage />
       </div> 
-
       </div>
     </div>
   );

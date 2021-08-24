@@ -12,9 +12,11 @@ const RechercheCvPage = () => {
   return (
     <div className="container mt-5">
      <div className="container mt-3 w-100"> 
+
        <div className="text-center bg-custom border border-success rounded-pill mb-3">
         <h1>Recherche  CV</h1>
       </div>
+      
       <div className="">
         <Row className="mb-3">
           <Col>
@@ -30,7 +32,7 @@ const RechercheCvPage = () => {
           </Col>
         </Row>
       </div>
-      <div className=" border border-success rounded">
+      <div className="container border border-success rounded">
       <div className="rechercheDivHaut m-4">
         <Row>
           <Col>
@@ -41,7 +43,7 @@ const RechercheCvPage = () => {
               </Col>
               <Col>
                 <Fragment className="d-flex">
-                  <Button onClick={() => setShow(!show)} variant="outline-primary">
+                  <Button onClick={() => setShow(!show)} variant="outline-success">
                     Calendrier
                   </Button>
                   {show ? <Calendar onChange={setDate} value={date} /> : null}
@@ -69,7 +71,7 @@ const RechercheCvPage = () => {
             <h6 className="titre">Experience professionnelle</h6>
             <Row>
               <Col>
-                <Form.Select aria-label="Default select example">
+                <Form.Select aria-label="Default select example"defaultValue>
                   <option>Annéees d'experience</option>
                   <option value="1">débutant</option>
                   <option value="2">1-2 ans</option>
@@ -159,7 +161,7 @@ const RechercheCvPage = () => {
           </Button>
         </div>
       </div>
-      <hr />
+      
 
       <CardGroup>
       <Card className="m-4 border border-success rounded">
