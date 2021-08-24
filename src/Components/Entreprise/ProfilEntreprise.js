@@ -5,6 +5,10 @@ import InfoProfessRecruteurPage from "./InfoProfessRecruteur";
 import InfoConnexPage from "../Users/InfoConnexion";
 import SuppComptePage from "../Users/SupprimerCompte";
 import ReseauSociauxPage from "../Users/ReseauxSociaux";
+import GoogleBtn from "../Users/GoogleBtn";
+import FacebookBtn from "../Users/FacebookBtn";
+import TwitterBtn from "../Users/TwitterBtn";
+import GithubBtn from "../Users/GithubBtn";
 
 const ProfilEntreprisePage = () => {
   const [date] = useState(new Date());
@@ -33,13 +37,16 @@ const ProfilEntreprisePage = () => {
           <InfoConnexPage />
           <SuppComptePage />
         </div>
-        <div id="profilDiv2">
+        <div id="profilDiv2" className="border border-primary rounded">
           <h4 className="text-center">Réseaux sociaux</h4>
           <p>
             Reliez votre compte à un réseau social pour l'utiliser comme moyen
             de connexion
           </p>
-          <ReseauSociauxPage />
+          <GoogleBtn />
+          <TwitterBtn />
+          <FacebookBtn />
+          <GithubBtn />
         </div>
       </section>
     </main>

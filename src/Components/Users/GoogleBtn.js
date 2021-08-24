@@ -1,17 +1,22 @@
 import React from 'react';
 import {GoogleLogin ,GoogleLogout}from 'react-google-login';
 
+
+
 const styles = {
   img:{
      borderRadius:"50%",
      width:"32px",
      height:"32px",
      border:"2px solid #bdc3c7"
+
   },
   dropdown: {
     background:"transparent",
     borderColor:"transparent",   
+
   },
+
 };
 
 const GoogleBtn=()=>{
@@ -25,6 +30,7 @@ return(
 <>
 {current ? (
 <>
+
 <div class="dropdown">
 <button
   class="btn btn-secondary dropdown-toogle"
@@ -46,30 +52,36 @@ return(
   class="dropdown-menu dropdown-menu-dark"
   aria-labelledby="dropdownMenuButton2"
 >
+
 <li>
 <GoogleLogout
 clientId={CLIENT_ID}
 buttonText="Logout"
 onLogoutSuccess={handleLogoutSuccess}
 onFailure={handleLogoutFailure}
+
 />
 </li>
 </ul>
 </div>
+
 </>
 ) : (
 <GoogleLogin
 className="google"
 clientId={CLIENT_ID}
-buttonText="Login"
+buttonText="Google"
 onSuccess={handleLoginSuccess}
 onFailure={handleLoginFailure}
 cookiePolicy={"single_host_origin"}
 responseType="code,Token"
 />
+
 )}
 </>
+
 );
+
 };
 export default GoogleBtn;
 

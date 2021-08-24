@@ -14,7 +14,7 @@ const ListeCv = () => {
       <div className="text-center bg-custom border border-primary rounded-pill mb-3">
         <h1>Liste des CV</h1>
         </div>
-      <div className="border border-success rounded">
+      <div className=" border border-success rounded">
       <Table striped bordered hover size="sm"> 
         <thead>
           <tr>

@@ -1,7 +1,11 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import ReseauSociauxPage from "../Users/ReseauxSociaux";
+import ReseauxSociauxPage from "../Users/ReseauxSociaux";
+import GoogleBtn from "../Users/GoogleBtn";
+import FacebookBtn from "../Users/FacebookBtn";
+import TwitterBtn from "../Users/TwitterBtn";
+import GithubBtn from "../Users/GithubBtn";
 
 const ConnexionPage = () => {
   return (
@@ -9,6 +13,7 @@ const ConnexionPage = () => {
       <div className="text-center bg-custom border border-primary rounded-pill mb-3">
         <h1>Connectez-vous</h1>
       </div>
+
       <div className="border border-primary rounded">
       <Form>
         <Form.Group className="m-3">
@@ -28,9 +33,30 @@ const ConnexionPage = () => {
         </Button>
       </Form>
       </div>
+
       <h4 className="text-center">Utiliser les réseaux sociaux</h4>
+
       <div className="main reseauSociauxCnx border border-primary rounded ">
-        <ReseauSociauxPage />
+      <h5 className="text-center mt-4">Se connecter avec </h5>
+
+      <div className="row w-50">
+
+        <div className="google">
+      <GoogleBtn />
+      </div>
+        <div className="twitter">
+      <TwitterBtn />
+      </div>
+        <div className="facebook">
+      <FacebookBtn />
+      </div>
+        <div className="github">
+      <GithubBtn />
+      </div>
+
+      <ReseauxSociauxPage />
+      </div> 
+
       </div>
     </div>
   );

@@ -35,16 +35,16 @@ const ContactPage = () => {
         <div className="col m-5 ">
           <h3>Carte</h3>
           
-           <Zoom>
-    <picture>
-    <source media="(max-width: 800px)" srcSet="/path/to/teAraiPoint.jpg" />
-    <img
-      alt="carte"
-      src="images/philiancePNG.PNG"
-     width="500"
-    />
-    </picture>
-  </Zoom>
+      <Zoom>
+         <picture>
+         <source media="(max-width: 800px)" srcSet="/path/to/teAraiPoint.jpg" />
+         <img
+          alt="carte"
+          src="images/philiancePNG.PNG"
+         width="500"
+        />
+        </picture>
+      </Zoom>
           {/* <img src="images/philiancePNG.PNG" id="photo" width="500"  onClick="document.getElementById('photo').style.width='300px';"/> */}
           {/* <img className="imageMap" src="images/philiancePNG.PNG" alt="" /> */}
         </div>

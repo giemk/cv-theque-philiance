@@ -6,7 +6,7 @@ const SuppComptePage = () => {
     <main className="container main mt-4">
     <div className="text-center">
     <div id="">
-      <div className=" bg-custom border border-primary rounded-pill">
+      <div className="border border-primary rounded-pill">
         <h3>Supprimer un compte</h3>
         </div>
         <div className="border border-primary mt-4">
